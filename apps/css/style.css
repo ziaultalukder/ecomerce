@@ -1,0 +1,1512 @@
+*::-moz-selection {
+    background: #b3d4fc none repeat scroll 0 0;
+    text-shadow: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+img{
+    border: 0;
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+.clr{
+    clear: both;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Nikosh";
+    src: url(../fonts/Nikosh.ttf);
+}
+
+body{
+    background: #fff;
+    color: #444546;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+}
+
+.notInMobile{
+    display: block;
+}
+
+.topFixed{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.headerShadow {
+    box-shadow: 1px 2px 4px 0 rgba(189, 194, 194, 0.75);
+}
+
+.top_part{
+    background: #F2F2F2;
+    height: 33px;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.top_part_left ul{
+    padding-top: 7px;
+}
+
+.top_part_left ul li{
+    color: #868686;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.top_part_left ul li:first-child {
+    color: #868686;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.top_part_right ul{
+    padding-top: 7px;
+    text-align: right;
+}
+
+.top_part_right ul li{
+    padding-left: 25px;
+}
+
+.top_part_right ul li a {
+    color: #868686;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.logo_part{
+    padding-top: 10px;
+    transition: all 0.5s ease 0s;
+    margin-top: 0;
+}
+
+.main_logo {
+    transition: all 0.5s ease 0s;
+    width: 180px;
+}
+
+.mobileMenu .navbar-nav{
+    display: none;
+}
+
+.mobile_menu_icon{
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    display: none;
+    float: left;    
+}
+
+.mainMenu {
+    border-bottom: 1px solid #cbcbcb;
+    height: 43px;
+    overflow: hidden;
+    transition: height 0.5s ease 0s;
+}
+
+.mainMenuItems ul {
+    line-height: 1;
+    margin: 18px 0 8px 278px;
+    text-align: left;
+}
+
+.mainMenuItems ul li {
+    padding: 0 15px;
+}
+
+.mainMenuItems ul li a {
+    border-bottom: 3px solid transparent;
+    color: #444546;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    transition: border-bottom-color 0.5s ease 0s;
+}
+
+.mainMenuItems ul li a.active {
+    border-bottom: 3px solid #4fa23a;
+}
+
+.mainMenuItems ul li a:hover{
+    border-bottom: 3px solid #4fa23a;
+    transition: border-bottom-color 0.5s ease 0s;
+}
+
+.productMenu{
+    background-color: #f4f8ef;
+    height: 44px;
+    border-bottom: 1px solid #cbcbcb;
+    transition: all 0.5s ease 0s;
+    display: block;
+}
+
+.productMenu ul{
+    margin-bottom: 0;
+}
+
+.productMenu ul li:first-child{
+    margin-left: -5px;
+}
+
+.productMenu ul li a{
+    color: #545252;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 13px 7px;
+    transition: all 0.5s ease 0s;
+}
+
+.productMenu ul li a:hover{
+    background-color: #E7EFDD;
+    text-decoration: none;
+}
+
+.productMenu ul li ul li:first-child{
+    margin-left: 0;
+}
+
+.account {
+    border: 1px solid #dfdede;
+    border-radius: 3px;
+    color: #bebebe;
+    float: left;
+    font-size: 12px;
+    margin-bottom: -12px;
+    margin-top: -6px;
+    padding: 7px 0;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    width: 120px;
+}
+
+.account_area{
+    padding-top: 30px;
+    text-align: right;
+}
+
+.account_area ul{
+    font-size: 0;
+    margin-left: -30px;
+}
+
+.account_area > ul > li {
+    font-size: 14px;
+    margin-left: 15px;
+    padding: 0;
+}
+
+.account_area ul li.my_account{
+    margin-left: 5px;
+    position: relative;
+    width: 118px;
+    z-index: 9;
+    display: block;
+}
+
+.mobileHrLine {
+    display: none !important;
+}
+
+.inMobileOnly {
+    display: none;
+}
+
+.searchContent{
+    padding-right: 15px;
+}
+
+.searchBox{
+    background-color: #efefef;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.btn-search{
+    background-color: #4490a5;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    height: 33px;
+    padding: 2px 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accountDetailArea {
+    animation: 0.5s ease 0s normal none 1 running display-none-transition;
+    display: none;
+    left: -37px;
+    position: absolute;
+}
+
+.user_image{
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    font-size: 17px;
+    margin: 0 5px;
+}
+
+.account > .fa-angle-down,
+.account > img{
+    border-radius: 2px;
+    font-size: 17px;
+    margin: 0 2px;
+}
+
+.notification_area i {
+    color: #bebebe;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart_area{
+    float: right;
+    margin-top: -4px;
+    position: relative;
+    width: 115px;
+    z-index: 9;
+}
+
+.cart{
+    width: 114px;
+    background-color: #4fa23a;
+    color: #fff;
+    border-radius: 3px;
+    float: right;
+    font-size: 12px;
+    padding: 7px 0;
+    text-align: center;
+    transition: background-color 0.5s ease 0s;
+}
+
+.cart_area:hover .cart{
+    background-color: #3d842b;
+    color: #fff;
+    transition: background-color 0.5s ease 0s;
+}
+
+.cart img{
+    padding-right: 9px;
+}
+
+.cart i{
+    font-size: 17px;
+    padding-left: 9px;
+}
+
+.slider{
+    padding-top: 30px;
+}
+
+.slider_area{
+    width: 100%;
+}
+
+@media (max-width:768px){
+    .slider_area img{
+        width: 100%;
+    }
+}
+
+.offer_banner_area{
+    margin-left: -8px;
+}
+
+.offer_banner_area a{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.homemenu{
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 15px;
+    margin: 0 0 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.homemenu > li{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #4fa23a #cdcdcd #ffffff;;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    cursor: pointer;
+    margin-bottom: -1px;
+    margin-left: 278px;
+    padding: 8px 20px;
+}
+
+.first_category{
+    font-size: 0;
+    margin-bottom: 30px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.book_subjects{
+    margin-bottom: 48px;
+}
+
+.book_items{
+    display: inline-block;
+    padding: 0 15px;
+    vertical-align: top;
+    width: 16.6667%;
+}
+
+.book_items a{
+    display: block;
+    margin: auto;
+    width: 165px;
+}
+
+.book_items img{
+    min-height: 1px;
+    width: 100%;
+}
+
+.book_subject{
+    background-color: #f3f3f3;
+    width: 100%;
+}
+
+.book_subject img{
+    width: 82px;
+    margin-left: 25%;
+    padding: 10px;
+}
+
+.book_subject_caption{
+    background-color: #d8d8d8;
+    height: 30px;
+    overflow: hidden;
+}
+
+.book_subject:hover .book_subject_caption{
+    background-color: #AEAEAE;
+    transition: all linear 0.2s;
+}
+
+.book_subject_caption h2{
+    font-family: "Nikosh";
+    font-size: 15px;
+    color: #444546;
+    margin: 0;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.base{
+    position: relative;
+}
+
+.viewMoreBtn{
+    font-size: 15px;
+    height: 40px;
+    width: 135px;
+    background-color: #f0f0f0;
+    color: #444546;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+
+a.viewMoreBtn{
+    display: inline-block;
+    padding: 8px;
+    margin-left: 25px;
+}
+
+.viewMoreBtn:hover{
+    background-color: #4FA23A;
+    color: #fff;
+    transition: all linear 0.2s;
+}
+
+.book_home_row{
+    margin: 15px 0;
+    position: relative;
+}
+
+.home_row_menu{
+    margin-bottom: 15px;
+}
+
+.home_row_menu ul{
+    border-bottom: 1px solid #cdcdcd;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.home_row_menu ul li{
+    border-bottom: 2px solid #fff;
+    color: #8f9495;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.home_row_menu ul li:hover{
+    border-bottom-color: #4fa23a;
+    color: #444546;
+    cursor: pointer;
+    transition: color 0.5s ease 0s;
+}
+
+.home_row_menu ul li.active{
+    border-bottom-color: #4fa23a;
+    color: #444546;
+    cursor: pointer;
+    transition: color 0.5s ease 0s;
+}
+
+.booklist{
+    display: block;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.bookListRow{
+    float: left;
+}
+
+.list{
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    width:234px; 
+}
+
+.bookListItem{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.bookListItem:hover{
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 0 25px -8px rgb(141,141,141);
+}
+
+.bookListItem > a > img{
+    display: block;
+    margin: 0 auto;
+    width: 130px !important;
+}
+
+.bookListItem a h2{
+    color: #444546;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0 5px;
+}
+
+.bookListItem a p{
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    color: #5f6061;
+    display: table;
+    min-height: 32px;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.bookListItem a ul{
+    list-style-type:disc;
+    margin: 0 0 -2px;
+    padding: 0 0 0 14px;
+}
+
+.bookListItem a ul li{
+    color: #5f6061;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.presentPrice {
+    font-size: 16px;
+    color: #444546;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.previousPrice {
+    text-decoration: line-through;
+    padding-right: 10px;
+    color: #5f6061;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.discount {
+    font-size: 13px;
+    color: #f16565;
+    line-height: 21px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.bookHoverEffect{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #eae9e9;
+    border-top: 1px solid #eae9e9;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 160px;
+    width: 100%;
+}
+
+.bookListItem:hover .bookHoverEffect{
+    display: table;
+}
+
+.bookHoverEffect > ul{
+    display: table-row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.bookHoverEffect > ul > li {
+    border-right: 1px solid #908888;
+    cursor: pointer;
+    display: table-cell;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+
+.bookHoverEffect > ul > li:last-child {
+    border-right: 0 none;
+}
+
+.bookHoverEffect > ul > li:hover{
+    color: #4490a5;
+}
+
+.bookHoverEffect > ul > li > i {
+    display: block;
+    height: 14px;
+}
+
+a.viewMoreBtn.small {
+    background-color: #4490a5;
+    border: 0 none;
+    color: #ffffff;
+    font-size: 13px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding: 7px;
+    visibility: hidden;
+    width: 96px;
+}
+
+div.booklist:hover a.viewMoreBtn.small {
+    visibility: visible;
+}
+
+a.viewMoreBtn.small:hover {
+    background-color: #4fa23a;
+}
+
+.authorList{
+    margin-bottom: 50px;
+}
+
+.authorList  h1{
+    border-top: 1px solid #cdcdcd;
+    font-size: 25px;
+    font-weight: 300;
+    color: #444546;
+    margin: 0;
+    padding: 30px 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.authorsInfo{
+    float: left;
+}
+
+.authorsInfo a{
+    width: 228px;
+    display: block;
+}
+
+.authorListRow{
+    -moz-user-select: none;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.authorListItem{
+    display: block;
+}
+
+.authorListItem img{
+    border: 2px solid #c7c7c7;
+    border-radius: 50%;
+    display: block;
+    height: 140px;
+    margin: 0 auto;
+    width: 140px;
+} 
+
+.authorListItem:hover img{
+    border-color: #4fa23a;
+    transition: all 0.5s ease 0s;
+}
+
+.authorListItem > h2 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.bookReviewArea{
+    margin: 30px 0 50px;
+}
+
+.bookReviewArea h1{
+    border-top: 1px solid #cdcdcd;
+    color: #444546;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    padding: 36px 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.productReview{
+    margin: 0 -15px;
+}
+
+.reviews{
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.bookReview{
+    width: 585px;
+    padding: 0 15px;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+.img-bok{
+    width: 130px;
+    opacity: 1;
+}
+
+.bookReview > div{
+    float: right;
+    width: 400px;
+}
+
+.bookReview > div > h2{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.bookReview > div > h2 > a{
+    color: #444546;
+}
+
+.pRevRaty{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.pRevRaty > li {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.pRevRaty > li:nth-child(1) {
+    float: left;
+    margin-top: -6px;
+}
+
+.pRevRaty > li > div{
+    width: 93px; 
+    float: left; 
+    margin-top: 4px; 
+    margin-right: 3px;
+}
+
+.pRevRaty > li:nth-child(3) > a{
+    color: #4fa23a;
+}
+
+.bookReview > div > p{
+    color: #8f9495;
+    font-size: 13px;
+}
+
+.bookReview > div > p > span.userName {
+    color: #444546;
+    font-size: 17px;
+}
+
+.bookReview > div > a > p {
+    color: #5f6061;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.signUpArea{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 30px 0;
+}
+
+.signUpWrapper{
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.signUpTextArea{
+    color: #888888;
+    font-size: 13px;
+    float: left;
+    width: 362px;
+    line-height: 40px;
+}
+
+.signUpFormArea{
+    float: right;
+    width: 593px;
+}
+
+.inputEmail{
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    float: left;
+    height: 40px;
+    margin-right: 5px;
+    padding: 10px;
+    width: 367px;
+}
+
+.btnSignup {
+    background-color: #4490a5;
+    border: medium none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    height: 40px;
+    margin-left: 7px;
+    text-transform: uppercase;
+    width: 90px;
+}
+
+.footerFeatureArea{
+    border-bottom: 1px solid #cdcdcd;
+    padding: 20px 0 30px;
+}
+
+.footerFeatureList {
+    margin-top: -10px;
+}
+
+.footerFeatureList > h1 {
+    color: #444546;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 17px 0 5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footerFeatureList > ul > li > a {
+    color: #8f9495;
+    font-size: 13px;
+    transition: color 0.5s ease 0s;
+}
+
+.footerFeatureList > ul > li > a:hover{
+ color: #489DC0;
+}
+
+.footerSocialArea {
+    margin-left: -48px;
+}
+
+.facebookPluginArea {
+    margin: 10px 0;
+}
+
+.addressArea > a > img {
+    margin-bottom: 32px;
+    margin-top: 25px;
+    width: 147px;
+}
+
+.addressArea > ul > li {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.addressArea > ul > li > img {
+    float: left;
+    padding-right: 14px;
+    padding-top: 2px;
+}
+
+.addressArea > ul > li > p {
+    color: #444546;
+    font-weight: 600;
+}
+
+.addressArea > ul > li:last-child > p {
+    color: #8f9495;
+    float: left;
+    font-weight: 400;
+}
+
+.socialIcon {
+    margin: 0;
+}
+
+.socialIcon > li {
+    float: left;
+    padding: 8px 3px 1px;
+}
+
+.socialIcon > li > a > .fa {
+    background-color: #fff;
+    font-size: 33px;
+}
+
+.socialIcon > li > a:hover .fa{
+    background-color: #fff;
+    color: #6e7644;
+    transition: all 0.5s ease 0s;
+}
+
+.socialIcon > li:nth-child(2) > a > i {
+    color: #3a5897;
+    font-size: 33px;
+}
+
+.socialIcon > li:nth-child(3) > a > i {
+    color: #55ACEE;
+    font-size: 33px;
+}
+
+.socialIcon > li:nth-child(4) > a > i {
+    color: #DF2E2E;
+    font-size: 33px;
+}
+
+h1.staConnHead {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px 0 0;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+
+.footerTopWrapper {
+    color: #888888;
+    font-weight: 300;
+    margin: 30px auto;
+    max-width: 1080px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid #d5d5d5;
+    padding: 10px 0;
+}
+
+@media (max-width:360px){
+    .top_part_right > ul > li {
+        display: none;
+    }
+    
+    .top_part_right > ul > li:nth-child(3) {
+        display: block;
+        float: right;
+    }
+    .notInMobile {
+        display: none !important;
+    }
+    
+    .mobile_menu_icon {
+        display: block;
+        margin-top: -4px;
+        padding: 0;
+    }
+    
+    .mobile_menu_icon > i {
+        color: #bebebe;
+        font-size: 23px;
+    }
+    
+    .main_logo {
+        float: left;
+        margin-left: 15px;
+        margin-top: -8px;
+        width: 80px;
+    }
+    
+    .mobileMenu {
+        background-color: #393a3b;
+        display: none;
+        height: 100%;
+        left: 0px;
+        overflow: auto;
+        position: fixed;
+        top: 83px;
+        transition: left 0.5s ease 0s;
+        width: 250px;
+        z-index: 99;
+    }
+    
+    .mobileMenu .navbar-nav{
+    display: block;
+}
+    
+    .mobileMenu > ul {
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .mobileMenu > ul > li {
+        font-size: 13px;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    
+    .mobileMenu > ul > li > a {
+        border-bottom: 1px solid #333435;
+        border-left: 4px solid #393a3b;
+        box-shadow: 0 0 0 1px #3f4041;
+        color: #bcbcbd;
+        display: block;
+        font-weight: 500;
+        height: 100%;
+        margin-bottom: 1px;
+        padding: 12px 0 12px 11px;
+        width: 100%;
+    }
+    
+    .mobileMenu > ul > li > ul {
+        border-bottom: 1px solid #333435;
+        box-shadow: 1px 0 0 1px #3f4041;
+        display: none;
+        list-style: outside none none;
+        margin-bottom: 1px;
+        padding-left: 30px;
+    }
+    
+    .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li {
+        border-bottom: 1px solid #333435;
+        box-shadow: 1px 0 0 1px #3f4041;
+        margin-bottom: 1px;
+    }
+    
+    .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu > li > a {
+        color: #bcbcbd;
+        display: block;
+        font-size: 14px;
+        padding: 10px 0;
+        text-transform: none;
+    }
+    
+    .mobileMenu > ul > li > a:hover{
+        background-color: inherit;
+    }
+    
+    .mobileMenu > ul > li > ul > li > a:hover{
+        background-color: inherit;
+        color: #bcbcbd;
+    }
+    
+    .account_area{
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-left: 40px;
+    }
+    
+    .account_area > ul > li {
+        margin-left: 20px;
+        margin-right: 4px;
+        padding: 0;
+    }
+    
+    .onlyInMobileLi {
+        display: inline-block !important;
+    }
+    
+    .verAlinTextBottom {
+        vertical-align: text-bottom;
+    }
+    
+    .mobileHrLine {
+        border-top: 1px solid #cdcdcd;
+        display: inline-block !important;
+        float: left;
+        height: 0;
+        margin: 0 0 -1px;
+        padding: 0;
+        width: 100%;
+    }
+
+    #searchBox {
+        height: 61px;
+        overflow: hidden;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .searchContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .searchBox {
+        margin-top: 15px;
+    }
+    
+    .homemenu{
+        font-size: 12px;
+    }
+    
+    .homemenu > li{
+        margin-left: 116px;
+        padding: 6px 12px;
+        margin-top: 20px;
+    }
+    
+    .inMobileOnly {
+        display: block;
+    }
+
+    div.mobileSecondMenu {
+        border-bottom: 1px solid #cdcdcd;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    div.mobileSecondMenu > ul {
+        height: 30px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    div.mobileSecondMenu > ul > li {
+        height: 30px;
+        padding: 5px;
+    }
+    
+    div.mobileSecondMenu > ul > li.active {
+        border-bottom: 3px solid #4fa23a;
+    }
+    
+    div.mobileSecondMenu > ul > li {
+        border-bottom: 3px solid #fff;
+    }
+    
+    div.mobileSecondMenu > ul > li:hover {
+        border-bottom: 3px solid #4fa23a;
+    }
+    
+    div.mobileSecondMenu > ul > li > a {
+        color: #444546;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    
+    .book_items {
+        width: 50%;
+    }
+    
+    .book_items a {
+        width: 100%;
+    }
+    
+    .book_items img {
+        display: none;
+    }
+    
+    .first_category >
+    .book_items:nth-child(6), 
+    .first_category > 
+    .book_items:nth-child(5), 
+    .first_category > 
+    .book_items:nth-child(4), 
+    .first_category > 
+    .book_items:nth-child(3) {
+        display: none;
+    }
+    
+    .home_row_menu {
+        height: 37px;
+        margin: 0 15px;
+        padding: 0;
+        position: relative;
+    }
+    
+    .home_row_menu > ul {
+        background-color: #fff;
+        border: 1px solid #cdcdcd;
+        height: 36px;
+        overflow: hidden;
+        padding-bottom: 0 !important;
+        position: absolute;
+        transition: height 0.5s ease 0s;
+        width: 100%;
+        z-index: 9;
+    }
+    
+    .home_row_menu > ul > li {
+        border-bottom: 1px solid #cdcdcd;
+        display: block;
+        line-height: 35px;
+        padding-bottom: 0;
+        text-align: left;
+    }
+    
+    .home_row_menu > ul > li:last-child {
+        border: medium none;
+    }
+    
+    .home_row_menu > ul > li.select {
+        border-bottom-color: #cdcdcd;
+        color: #444546;
+        margin: 0;
+        padding: 0 15px;
+    }
+    
+    .home_row_menu > ul > li.select > i {
+        font-size: 18px;
+        line-height: 35px;
+    }
+    
+    
+    .bookListItem > a > img {
+        width: 90px !important;
+    }
+    
+    .bookHoverEffect {
+        top: 149px;
+    }
+    
+    .bookListItem:hover .bookHoverEffect {
+        display: none;
+    }
+    
+    .list{
+        width: 180px;
+    }
+    
+    .bookReview{
+        width: 360px;
+    }
+    
+    .InMob{
+        display: none;
+    }
+    
+    .bookReview > div {
+        width: 100%;
+    }
+    
+    .authorsInfo > a {
+        display: block;
+        width: 165px;
+    }
+    
+    .signUpArea {
+        padding: 17px 0 30px;
+    }
+    
+    .signUpTextArea {
+        line-height: 22px;
+        margin: 12px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .inputEmail {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .signUpFormArea {
+    text-align: center;
+    width: 100%;
+}
+
+    .addressArea {
+        display: table;
+        margin: 0 auto 10px;
+        width: 200px;
+    }
+    
+    .footerFeatureList {
+        margin: 10px 0 15px;
+        padding-left: 30px;
+    }
+
+    .footerFeatureArea{
+        padding: 0;
+        border: 0;
+    }
+    
+    section.footerFeatureArea > div > div > div.col-md-3.col-md-pull-6.col-sm-4.col-sm-pull-8.col-xs-12, section.footerFeatureArea > div > div > div.col-md-3.col-sm-12 {
+        border-top: 1px solid #cdcdcd;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .footerSocialArea {
+        display: table;
+        margin: 0 auto;
+        padding: 12px 0 10px;
+        width: 270px;
+    }
+    
+    h1.staConnHead {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:320px){
+    .account_area {
+        margin-left: 30px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    
+    .homemenu > li {
+        margin-left: 98px;
+    }
+    
+    .viewMoreBtn{
+        width: 115px;
+    }
+    
+    a.viewMoreBtn {
+        display: inline-block;
+        margin-left: 15px;
+        padding: 8px;
+    }
+    
+    .list{
+        width: 160px;
+    }
+    
+    .authorsInfo > a {
+        display: block;
+        width: 145px;
+    }
+    
+    .authorListItem img {
+        width: 135px;
+    }
+    
+    .authorListItem > h2 {
+        font-size: 20px;
+    }
+    
+    .bookReview {
+        width: 320px;
+    }
+}
+
+@media (min-width:768px){
+    .mobile_menu_icon {
+        background: transparent none repeat scroll 0 0;
+        border: medium none;
+        display: none;
+        float: left;
+    }
+    
+    .onlyInMobileLi {
+        display: none !important;
+    }
+    
+    .accountArea > ul > li {
+        margin-left: 15px;
+    } 
+}
+
+@media (width:768px){
+    .notInTab {
+        display: none !important;
+    }
+    
+    .tab_active{
+        display: block;
+    }
+    
+    .main_logo {
+        width: 135px;
+        padding-top: 15px;
+    }
+    
+    .searchContent {
+        margin-left: -45px;
+        padding-right: 50px;
+    }
+    
+    .logo_part{
+        padding-top: 0;
+    }
+    
+    .account_area ul {
+        margin-left: -75px;
+    }
+    
+    .mainMenuItems > ul {
+        margin: 18px 0 8px 138px;
+    }
+    
+    .homemenu > li {
+        margin-left: 138px;
+    }
+    
+    .slider{
+        padding-bottom: 28px;
+    }
+    
+    .book_items {
+        width: 25%;
+    }
+    
+    .book_items a{
+        width: 100%
+    }
+    
+    .bookListItem > a > img {
+        width: 100px !important;
+    }
+    
+    .bookListItem:hover .bookHoverEffect {
+        display: none;
+    }
+    
+    .list{
+        width: 187px;
+        float: left;
+    }
+    
+    .footerFeatureArea > div > div > div.col-md-3.col-sm-12 {
+        border-top: 1px solid #cdcdcd;
+        margin-top: 30px;
+    }
+    
+    .footerSocialArea {
+        margin: 30px auto;
+        width: 330px;
+    }
+    
+    .signUpTextArea {
+        line-height: 20px;
+        width: 200px;
+    }
+    
+    .signUpFormArea {
+        width: 505px;
+    }
+    
+    .inputEmail {
+        width: 285px;
+    }
+    
+    .bookReview{
+        width: 375px;
+    }
+    
+    .bookReview > div {
+        width: 190px;
+    }
+    
+    .authorsInfo a{
+        width: 180px;
+        float: left;
+    }
+}
+
+
+
+
+
+
+

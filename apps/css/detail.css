@@ -1,0 +1,723 @@
+*::-moz-selection {
+    background: #b3d4fc none repeat scroll 0 0;
+    text-shadow: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+img{
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    font-family:"Nikosh", "Roboto";
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family:"Nikosh";
+    src: url(../fonts/Nikosh.ttf);
+}
+
+.breadcrumb {
+    background-color: #fff;
+    margin: 0;
+    padding: 10px 0 20px;
+}
+
+.breadcrumb > li > a {
+    color: #000;
+    font-family:"Nikosh";
+    font-size: 18px;
+}
+
+.breadcrumb > li > a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb > li + li::before {
+    color: #000;
+    content: "";
+    font-family: FontAwesome,sans-serif;
+    font-size: larger;
+    padding: 0 5px;
+}
+
+.breadcrumb > li.activePage {
+    color: #888888;
+    font-size: 18px;
+}
+
+.bookImgArea {
+    border: 1px solid #cdcdcd;
+    height: 430px;
+    overflow: hidden;
+    padding: 48px 38px;
+    perspective: 1500px;
+    position: relative;
+    width: 310px;
+}
+
+.lookInsideBg {
+    background-color: #868484;
+    cursor: pointer;
+    height: 331px;
+    position: absolute;
+    width: 231px;
+}
+
+.lookInsideImg {
+    cursor: pointer;
+    position: absolute;
+    transform-origin: 0 0 0;
+    transition: -moz-transform 0.5s ease 0s;
+}
+
+.lookInsideImg:hover{
+    transform: rotateY(-20deg);
+}
+
+.bookImgArea > img {
+    width: 230px;
+}
+
+.sendShare {
+    margin: 20px 22px 48px 0;
+    text-align: center;
+}
+
+.sendShare > li {
+    color: #4490a5;
+    cursor: pointer;
+}
+
+.sendShare > li > i {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.buyArea {
+    margin-bottom: 22px;
+    margin-left: 47px;
+    width: 462px;
+}
+
+.buyArea > h2 {
+    color: #444546;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0;
+}
+
+.buyArea > p {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 10px;
+}
+
+.pRevRaty{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.pRevRaty > li {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.pRevRaty > li:nth-child(1) {
+    float: left;
+    margin-top: -6px;
+}
+
+.pRevRaty > li > div{
+    width: 93px; 
+    float: left; 
+    margin-top: 4px; 
+    margin-right: 3px;
+}
+
+.pRevRaty > li:nth-child(3) > a{
+    color: #4fa23a;
+}
+
+.productPriceArea {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    color: #5f6061;
+    font-size: 13px;
+    margin: 18px 0 0;
+    padding: 12px;
+    width: 100%;
+}
+
+.productPriceArea > p {
+    display: inline-block;
+    line-height: 28px;
+    font-size: 15px;
+    margin: 0;
+    width: 100%;
+}
+
+.priceLabel {
+    float: left;
+    text-align: left;
+    width: 90px;
+}
+
+.mainPrice {
+    color: #000;
+    float: left;
+    font-size: 25px;
+}
+
+.priceOff {
+    color: #f16565;
+    float: left;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 10px;
+}
+
+.actualPrice {
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.shippingPrice {
+    font-size: 16px;
+}
+
+.proInfoArea {
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.proInfoArea > ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.proInfoArea > ul > li {
+    color: #8f9495;
+    line-height: 25px;
+    font-size: 15px;
+    list-style-type: disc;
+}
+
+.proInfoArea > ul > li > a{
+    font-size: 17px;
+}
+
+.proDescArea {
+    color: #5f6061;
+    line-height: 1.6;
+}
+
+.noMargin {
+    margin: 0 !important;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ccc -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.proDescArea > h3, 
+.proDetailArea > h3, 
+.recomBrandArea > div.container > h1, 
+.recomBrandDecArea > h2, .custReviewArea > div.container > h1, 
+.queAndAnsArea > div.container > h1 {
+    color: #444546;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1;
+    margin: 28px 0 18px;
+}
+
+.alsoList {
+    margin-bottom: 40px;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.list{
+    float: left;
+}
+
+.bookListItem{
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    width: 228px;
+}
+
+.bookListItem:hover{
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 0 25px -8px rgb(141,141,141);
+}
+
+.bookListItem > a > img{
+    display: block;
+    margin: 0 auto;
+    width: 130px !important;
+}
+
+.bookListItem a h2{
+    color: #444546;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 15px 0 5px;
+}
+
+.bookListItem a p{
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    color: #5f6061;
+    display: table;
+    min-height: 32px;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.bookListItem a ul{
+    list-style-type:disc;
+    margin: 0 0 -2px;
+    padding: 0 0 0 14px;
+}
+
+.bookListItem a ul li{
+    color: #5f6061;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.bookListItem > a::before {
+    box-shadow: 0 10px 80px 15px #ffffff;
+    content: "";
+    display: block;
+    height: 0;
+    position: relative;
+    top: -25px;
+    transition: top 1200ms linear 0s;
+    width: 0;
+    z-index: 2;
+}
+
+.presentPrice {
+    font-size: 16px;
+    color: #444546;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.previousPrice {
+    text-decoration: line-through;
+    padding-right: 10px;
+    color: #5f6061;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.discount {
+    font-size: 13px;
+    color: #f16565;
+    line-height: 21px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.bookHoverEffect {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #eae9e9;
+    border-top: 1px solid #eae9e9;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 160px;
+    width: 100%;
+}
+
+.bookHoverEffect > ul {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.bookHoverEffect > ul > li {
+    border-right: 1px solid #908888;
+    cursor: pointer;
+    display: table-cell;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+
+.bookHoverEffect > ul > li:last-child {
+    border-right: 0 none;
+}
+
+.bookHoverEffect > ul > li:hover{
+    color: #4490a5;
+}
+
+.bookHoverEffect > ul > li > i {
+    display: block;
+    height: 14px;
+}
+
+.bookListItem:hover .bookHoverEffect{
+    display: table;
+}
+
+.bookListItem:hover a{
+    text-decoration: none;
+}
+
+.proDetailArea table {
+    border-top: 1px solid #e9e9e9;
+    color: #5f6061;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 0 50px;
+    width: 100%;
+}
+
+.proDetailArea tr {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.proDetailLabel {
+    background-color: #f5f5f5;
+    padding: 4px 0 5px 15px;
+    text-align: left;
+    vertical-align: middle;
+    width: 220px;
+    font-family: sans-serif;
+}
+
+.proDetailValue {
+    padding: 4px 0 5px 15px;
+    font-size: 13px;
+    font-family: "Nikosh", sans-serif;
+}
+
+.featuredPro {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 204px;
+}
+
+.featuredPro > h1 {
+    margin: 0;
+}
+
+.dealsHeading {
+    background-color: #4490a5;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 12px;
+    font-family: sans-serif;
+    //position: relative;
+}
+
+#recommendation a {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+#recommendation img {
+    margin: 10px auto;
+    width: 110px;
+}
+
+.proName {
+    margin-top: 13px;
+}
+
+.proPrice {
+    margin-bottom: 10px;
+}
+
+.proName, .proPrice {
+    color: #444546;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+.queAndAnsHeader {
+    background-color: #f5f5f5;
+    border-top: 2px solid #e4e4e4;
+    height: 77px;
+    margin-bottom: 40px;
+}
+
+.queAndAnsHeader > ul {
+    line-height: 77px;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+.queAndAnsHeader > ul > li {
+    color: #adaeaf;
+    float: right;
+    margin-left: 15px;
+    padding: 0;
+}
+
+.queAndAnsHeader > ul > li > a {
+    color: #444546;
+}
+
+.askQueBtn {
+    background-color: #4fa23a;
+    border: 1px solid #408a2d;
+    color: #fff;
+    height: 38px;
+    margin: 18px 30px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.askQueBtn:hover{
+    color: #fff;
+}
+
+@media (max-width:360px){
+    .bookListItem:hover .bookHoverEffect {
+        display: none;
+    }
+    
+    .container {
+        min-width: 290px;
+    }
+    
+    .breadcrumbArea {
+        margin: 20px -15px;
+    }
+    
+    .breadcrumb {
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #cdcdcd;
+        border-radius: 0;
+        border-top: 1px solid #cdcdcd;
+        padding: 7px 25px;
+    }
+    
+    .breadcrumb > li {
+        display: none;
+    }
+    
+    .breadcrumb > li + li::before {
+        color: #000;
+        content: "";
+        font-family: FontAwesome,sans-serif;
+        font-size: larger;
+        padding: 0 5px;
+    }
+    
+    .breadcrumb > li:nth-last-child(1), 
+    .breadcrumb > li:nth-last-child(2) {
+        display: inline-block;
+    }
+    
+    .bookImgArea {
+        float: none;
+        height: 395px;
+        margin: auto;
+        padding: 25px;
+        width: 290px;
+    }
+    
+    .bookImgArea > img {
+        width: 240px;
+    }
+    
+    .sendShare {
+        border-bottom: 1px solid #cdcdcd;
+        margin-bottom: 17px;
+        margin-right: 0;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .buyArea {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .buyArea > h2 {
+        font-size: 27px;
+    }
+    
+    .alsoList {
+        margin-bottom: 40px;
+        min-height: 150px;
+    }
+    
+    .bookListItem{
+        width: 180px;
+    }
+    
+    .bookListItem > a > img {
+        width: 90px !important;
+    }
+    
+    .notInMob{
+        display: none;
+    }
+    
+    .bookHoverEffect {
+        top: 147px;
+    }
+    
+    .proDescArea > h3, 
+    .proDetailArea > h3, 
+    .recomBrandArea > div.container > h1, 
+    .recomBrandDecArea > h2, 
+    .custReviewArea > div.container > h1, 
+    .queAndAnsArea > div.container > h1 {
+        color: #444546;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1;
+        margin: 38px 0 18px;
+    }
+    
+    .proDetailArea table {
+        border-top: 1px solid #e9e9e9;
+        color: #5f6061;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 0 0 50px;
+        width: 100%;
+    }
+    
+    .proDetailLabel {
+        background-color: #f5f5f5;
+        padding: 4px 0 5px 15px;
+        text-align: left;
+        vertical-align: middle;
+        width: 100px;
+    }
+    
+    .queAndAnsHeader > ul {
+        line-height: 17px;
+        margin: 20px 0;
+        width: 142px;
+    }
+    
+    .queAndAnsHeader > ul > li {
+        float: none;
+        margin: 0 !important;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .askQueBtn {
+        font-size: 14px;
+        margin: 18px 10px;
+        padding: 0;
+        width: 127px;
+    }
+}
+
+@media (width:768px){
+    .notInTab {
+        display: none !important;
+    }
+    
+    .buyArea {
+        margin-left: -5px;
+        width: 350px;
+    }
+    
+    .alsoList {
+        min-height: 150px;
+    }
+    
+    .bookListItem{
+        width: 187px;
+    }
+    
+    .bookListItem > a > img {
+        width: 100px !important;
+    }
+    
+    .bookListItem:hover .bookHoverEffect {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
